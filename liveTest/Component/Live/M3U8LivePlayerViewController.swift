@@ -1,5 +1,5 @@
 //
-//  CCLivePlayController.swift
+//  M3U8LivePlayerViewController.swift
 //  liveTest
 //
 //  Created by lhwarthas on 2022/11/21.
@@ -8,14 +8,13 @@
 import Foundation
 import AVKit
 
-class CCLivePlayerViewController : CommonPlayerViewController {
-    
-    var ccRoomId: String = ""
+class M3U8LivePlayerViewController : CommonPlayerViewController {
+    var playUrl: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         Task {
-            await self.fetchLiveData()
+            await self.playmedia(playUrl: playUrl)
         }
     }
     
@@ -29,17 +28,8 @@ class CCLivePlayerViewController : CommonPlayerViewController {
     }
 }
 
-// MARK: - Requests
-
-extension CCLivePlayerViewController {
-    func fetchLiveData() async {
-        let url = await CCRequest.requestLiveUrl(ccRoomId: ccRoomId)
-        await playmedia(playUrl: url)
-    }
-}
-
 // MARK: - Player
-extension CCLivePlayerViewController {
+extension M3U8LivePlayerViewController {
     @MainActor
     func prepare(toPlay asset: AVURLAsset) {
         if !asset.isPlayable {

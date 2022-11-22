@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		573E3CF3292BBE72009A7D69 /* M3U8LiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573E3CF2292BBE72009A7D69 /* M3U8LiveView.swift */; };
+		573E3CF5292BC087009A7D69 /* M3U8LivePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573E3CF4292BC087009A7D69 /* M3U8LivePlayerViewController.swift */; };
+		573E3CF7292BC11A009A7D69 /* M3U8LivePlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573E3CF6292BC11A009A7D69 /* M3U8LivePlayView.swift */; };
 		5748DB6D292B97AC00EF3277 /* CCRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5748DB6B292B97AC00EF3277 /* CCRequest.swift */; };
 		5748DB6E292B97AC00EF3277 /* WebRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5748DB6C292B97AC00EF3277 /* WebRequest.swift */; };
 		5748DB70292B982600EF3277 /* CCLiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5748DB6F292B982600EF3277 /* CCLiveView.swift */; };
@@ -23,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		573E3CF2292BBE72009A7D69 /* M3U8LiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M3U8LiveView.swift; sourceTree = "<group>"; };
+		573E3CF4292BC087009A7D69 /* M3U8LivePlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M3U8LivePlayerViewController.swift; sourceTree = "<group>"; };
+		573E3CF6292BC11A009A7D69 /* M3U8LivePlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M3U8LivePlayView.swift; sourceTree = "<group>"; };
 		5748DB6B292B97AC00EF3277 /* CCRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCRequest.swift; sourceTree = "<group>"; };
 		5748DB6C292B97AC00EF3277 /* WebRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebRequest.swift; sourceTree = "<group>"; };
 		5748DB6F292B982600EF3277 /* CCLiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCLiveView.swift; sourceTree = "<group>"; };
@@ -129,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				57D9E763292B6D2700D4570A /* CCLivePlayerViewController.swift */,
+				573E3CF4292BC087009A7D69 /* M3U8LivePlayerViewController.swift */,
 			);
 			path = Live;
 			sourceTree = "<group>";
@@ -146,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				5748DB6F292B982600EF3277 /* CCLiveView.swift */,
+				573E3CF2292BBE72009A7D69 /* M3U8LiveView.swift */,
 			);
 			path = Display;
 			sourceTree = "<group>";
@@ -154,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				57D9E768292B72DD00D4570A /* CCLivePlayView.swift */,
+				573E3CF6292BC11A009A7D69 /* M3U8LivePlayView.swift */,
 			);
 			path = LivePlay;
 			sourceTree = "<group>";
@@ -243,8 +252,11 @@
 				5748DB6E292B97AC00EF3277 /* WebRequest.swift in Sources */,
 				57D9E75B292B690C00D4570A /* CommonPlayerViewController.swift in Sources */,
 				5748DB70292B982600EF3277 /* CCLiveView.swift in Sources */,
+				573E3CF7292BC11A009A7D69 /* M3U8LivePlayView.swift in Sources */,
 				57D9E764292B6D2700D4570A /* CCLivePlayerViewController.swift in Sources */,
+				573E3CF3292BBE72009A7D69 /* M3U8LiveView.swift in Sources */,
 				57BB0CB0292B67DA00617C2E /* ContentView.swift in Sources */,
+				573E3CF5292BC087009A7D69 /* M3U8LivePlayerViewController.swift in Sources */,
 				57BB0CAE292B67DA00617C2E /* liveTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

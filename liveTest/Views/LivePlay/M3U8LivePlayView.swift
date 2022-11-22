@@ -1,5 +1,5 @@
 //
-//  CCLivePlayView.swift
+//  M3U8PlayView.swift
 //  liveTest
 //
 //  Created by lhwarthas on 2022/11/21.
@@ -8,13 +8,13 @@
 import SwiftUI
 import AVKit
 
-struct CCLivePlayView: UIViewControllerRepresentable {
+struct M3U8LivePlayView: UIViewControllerRepresentable {
   
-    var ccLiveRoomId: String
+    var playUrl: String
     
     func makeUIViewController(context: Context) -> AVPlayerViewController {
-        let controller = CCLivePlayerViewController()
-        controller.ccRoomId = ccLiveRoomId
+        let controller = M3U8LivePlayerViewController()
+        controller.playUrl = playUrl
         return controller
     }
 

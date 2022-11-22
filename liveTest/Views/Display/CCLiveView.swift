@@ -29,12 +29,12 @@ struct CCLiveView: View {
             }
         }.fullScreenCover(item: $useCCLive) {}
         content: { i in
-            readyPlay(ccLive: i)
+            toPlay(ccLive: i)
         }
     }
     
     
-    func readyPlay(ccLive: CCLive) -> some View {
+    func toPlay(ccLive: CCLive) -> some View {
         return CCLivePlayView(ccLiveRoomId: ccLive.roomId).edgesIgnoringSafeArea(.all)
     }
 }
